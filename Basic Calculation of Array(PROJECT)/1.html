@@ -11,10 +11,15 @@ Sample Output - ["assignment", "media"] -->
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 id="ans"></h1>
 </body>
 </html>
 
 <script>
-    
+    let arr1 = ["assignment" , "problem","media","upload"]
+    let ans = arr1.filter((el)=>{
+        return el[0] == 'a' || el[0] == 'A' || el[el.length-1] == 'a' || el[el.length-1] == 'A' 
+    })
+
+    document.getElementById("ans").innerHTML = ans
 </script>
