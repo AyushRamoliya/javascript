@@ -60,16 +60,11 @@
 
             if(pass === "")
             {
-                $("#err").text("Please enter password!")
+                $("#err").text("Please enter pass!")
             }
             else if(!regex.test(pass))
             {
                 $("#err").text("Please enter strong pass!")
-            }
-
-            if(mail === "")
-            {
-                $("#err").text("Please enter email!")
             }
 
         })
